@@ -39,6 +39,7 @@ class Decision:
     action: Action
     contributing_detectors: list[str] = field(default_factory=list[str])
     reason_chain: list[str] = field(default_factory=list[str])
+    errors: list[str] = field(default_factory=list[str])
 
 
 @dataclass(frozen=True)
